@@ -5,7 +5,8 @@ const app = express();
 app.use(express.json());
 
 const items = [];
-  
+
+// Post /items
 app.post("/items", (req, res) => {
     const { name, quantity, type } = req.body;
 
