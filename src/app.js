@@ -38,6 +38,7 @@ app.get("/items", (req, res) => {
     return res.status(httpStatus.OK).json(items);
 });
 
+// Get /items/:id
 app.get("/items/:id", (req, res) => {
     const id = req.params.id;
 
