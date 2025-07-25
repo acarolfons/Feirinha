@@ -26,6 +26,7 @@ app.post("/items", (req, res) => {
     return res.status(httpStatus.CREATED).json(novoItem);
 });
 
+// Get /items
 app.get("/items", (req, res) => {
     const { type } = req.query;
 
